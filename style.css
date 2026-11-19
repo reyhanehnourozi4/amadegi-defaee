@@ -823,3 +823,22 @@ footer>a {
     margin: 12px 0
   }
 }
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .image-gallery {
+        grid-template-columns: 1fr;
+    }
+}
